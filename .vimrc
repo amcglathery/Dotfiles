@@ -58,7 +58,9 @@ set cmdheight=2
 " Folding Stuffs
 " I find this one a little annoying sometimes set foldmethod=marker
 set wrap
-set textwidth=80
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
 
 " Syntax Higlighting
 filetype on
