@@ -108,6 +108,12 @@ set smartcase
 set incsearch
 set hlsearch
 set nolazyredraw
+set ignorecase
+set smartcase
+nnoremap / /\v
+vnoremap / /\v
+
+set gdefault
 
 " For linux clipboard register
 let g:clipbrdDefaultReg = '+'
@@ -316,3 +322,9 @@ function! SetArrowKeysAsTextShifters()
 endfunction
 
 call SetArrowKeysAsTextShifters()
+
+" Remap leader key
+let mapleader = ","
+
+" Commands with leader key
+nnoremap <leader><space> :noh<cr>
