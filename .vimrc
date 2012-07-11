@@ -232,7 +232,6 @@ map n nzz
 
 " Swap ; and : (one less keypress)
 nnoremap ; :
-nnoremap : ;
 
 function! DelEmptyLineAbove()
     if line(".") == 1
