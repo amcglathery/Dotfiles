@@ -57,7 +57,6 @@ set cmdheight=2
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
 
 " Syntax Higlighting
 filetype on
@@ -107,8 +106,6 @@ set smartcase
 set incsearch
 set hlsearch
 set nolazyredraw
-set ignorecase
-set smartcase
 nnoremap / /\v
 vnoremap / /\v
 
@@ -218,11 +215,17 @@ endfunction
 
 "{{{ Mappings
 
+" Remap leader key
+let mapleader=","
+
 " Open Url with the browser \w
 map <Leader>w :call Browser ()<CR>
 
 " Trigger the above todo mode
 noremap <silent> <Leader>todo :execute TodoListMode()<CR>
+
+map <Leader><space> :noh<cr>
+map <Leader>ev :vsp $MYVIMRC<cr><C-w>w
 
 " Next Tab
 noremap <silent> <C-Right> :tabnext<CR>
@@ -322,11 +325,7 @@ endfunction
 
 call SetArrowKeysAsTextShifters()
 
-" Remap leader key
-let mapleader = ","
-
 " Commands with leader key
-nnoremap <leader><space> :noh<cr>
 
 " Save on focus lost
 au FocusLost * :wa
