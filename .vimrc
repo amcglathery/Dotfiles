@@ -227,6 +227,9 @@ noremap <silent> <Leader>todo :execute TodoListMode()<CR>
 map <Leader><space> :noh<cr>
 map <Leader>ev :vsp $MYVIMRC<cr><C-w>w
 
+noremap <Leader>ga :!git add %<cr>
+noremap <Leader>gc :!git commit -m "
+
 " Next Tab
 noremap <silent> <C-Right> :tabnext<CR>
 " Previous Tab
