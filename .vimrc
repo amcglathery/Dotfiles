@@ -330,3 +330,6 @@ let mapleader = ","
 
 " Commands with leader key
 nnoremap <leader><space> :noh<cr>
+
+" Save on focus lost
+au FocusLost * :wa
