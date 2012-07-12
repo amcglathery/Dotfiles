@@ -224,11 +224,16 @@ map <Leader>w :call Browser ()<CR>
 " Trigger the above todo mode
 noremap <silent> <Leader>todo :execute TodoListMode()<CR>
 
+" clear search quickly
 map <Leader><space> :noh<cr>
+
+" edit vimrc quickly
 map <Leader>ev :vsp $MYVIMRC<cr><C-w>w
 
+" git leader commands
 noremap <Leader>ga :!git add %<cr>
 noremap <Leader>gc :!git commit -m "
+noremap <Leader>gs :!git status<cr>
 
 " Next Tab
 noremap <silent> <C-Right> :tabnext<CR>
