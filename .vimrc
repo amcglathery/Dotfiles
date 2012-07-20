@@ -235,6 +235,13 @@ noremap <Leader>ga :!git add %<cr>
 noremap <Leader>gc :!git commit -m "
 noremap <Leader>gs :!git status<cr>
 
+" wrap current word in quotes
+noremap <Leader>' ciw'<C-r>"'<Esc>
+noremap <Leader>" ciw"<C-r>""<Esc>
+
+" map escape to something easier
+imap jj <Esc>
+
 " Next Tab
 noremap <silent> <C-Right> :tabnext<CR>
 " Previous Tab
