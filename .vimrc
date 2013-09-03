@@ -82,6 +82,9 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
+" 4 spaces for java
+autocmd FileType java setlocal shiftwidth=4 tabstop=4 softtabstop=4
+
 " Spell checking (default=false)
 if version >= 700
     set spl=en spell
@@ -141,7 +144,6 @@ syntax enable "Enable highlighting
 set guioptions-=T
 set t_Co=256
 set background=dark
-colorscheme peaksea
 set nonu
 set encoding=utf8
 
