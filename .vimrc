@@ -74,6 +74,7 @@ set autoindent
 
 " Complete CSS
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " Change spaces to a tab character
 set expandtab
