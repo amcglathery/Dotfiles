@@ -10,7 +10,7 @@
 "{{{Auto Commands
 
 " Remove any trailing whitespace that is in the file
-autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+" autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 " Restore cursor position to where it was before
 augroup JumpCursorOnEdit
@@ -62,6 +62,9 @@ set formatoptions=qrn1
 filetype on
 filetype plugin on
 filetype indent on
+
+au BufReadPost *.less set syntax=css
+au BufReadPost *.dust set syntax=html
 
 " read a file when it is changed from the outside
 set autoread
