@@ -129,7 +129,6 @@ highlight MatchParen ctermbg=4
 
 
 "{{{Look and Feel and sound
-syntax enable "Enable syntax hl
 
 " Set font according to system
 " if you're using a mac
@@ -143,14 +142,13 @@ syntax enable "Enable syntax hl
   set gfn=Monospace\ 10
   set shell=/bin/bash
 
-syntax enable "Enable syntax h1
-
 syntax enable "Enable highlighting
 set guioptions-=T
 set t_Co=256
 set background=dark
 set nonu
 set encoding=utf8
+colors peaksea
 
 try
     lang en_US
