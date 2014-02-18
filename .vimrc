@@ -3,8 +3,9 @@
 " "   http://amix.dk/vim/vimrc.html
 " "   http://stackoverflow.com/questions/164847/what-is-in-your-vimrc
 "
-" " Catered to the needs and woes of a Tufts University Comp40 student
-" " Contact Marshall @ mmoutenot@gmail.com with questions or comments.
+" " Thanks to Marshall for providing the basis for this .vimrc
+" " Contact Andrew @ a.mcglathery@gmail.com with questions or comments.
+" " On Github at http://github.com/amcglathery/Vimrc
 "
 
 "{{{Auto Commands
